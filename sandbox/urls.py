@@ -23,6 +23,6 @@ urlpatterns = patterns('',
 if settings.DEBUG:
     urlpatterns += patterns('',
         (r'^static/(?P<path>.*)$', 'django.views.static.serve', 
-        {'document_root': path.abspath(path.dirname(__file___) +
+        {'document_root': path.abspath(path.dirname(__file__)) +
         '/static', 'show_indexes': True}),
     )
